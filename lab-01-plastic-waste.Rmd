@@ -25,6 +25,11 @@ Histogram and Density plot shown below
 ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap, colour = continent)) +
   geom_histogram() +
 facet_wrap(~ continent)
+```
+
+### Exercise 2
+
+```{r plastic-waste-density}
 ggplot(data = plastic_waste, 
        mapping = aes(x = plastic_waste_per_cap, 
                      color = continent, 
@@ -33,15 +38,9 @@ ggplot(data = plastic_waste,
 
 ```
 
-### Exercise 2
-
-```{r plastic-waste-density}
-# remove this comment and add the code for Exercise 2 here
-```
-
 ### Exercise 3
 
-*Remove this text, and add your answer for Exercise 3 here.*
+the colour and fill are related to the variables in the data the alpha is just the appearance
 
 ### Exercise 4
 
