@@ -1,6 +1,6 @@
 ---
 title: "Lab 01 - Plastic waste"
-author: "INSERT NAME HERE"
+author: "Group 11"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -19,10 +19,18 @@ plastic_waste <- read_csv("data/plastic-waste.csv")
 
 ### Exercise 1
 
-*Remove this text, and add your answer for Exercise 1 here.*
+Histogram and Density plot shown below
 
 ```{r plastic-waste-continent}
-# remove this comment and add the code for Exercise 1 here
+ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap, colour = continent)) +
+  geom_histogram() +
+facet_wrap(~ continent)
+ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density(alpha = 0.3)
+
 ```
 
 ### Exercise 2
