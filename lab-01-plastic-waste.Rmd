@@ -80,7 +80,7 @@ the colour and fill are related to the variables in the data the alpha is just t
 
 ### Exercise 8
 
-*Remove this text, and add your answer for Exercise 8 here.*
+*Remove this text, and add your answer for Exercise 8 here.This is just a test to see if my github is working*
 
 ```{r recreate-viz}
 plastic_waste_edit <- plastic_waste %>% 
